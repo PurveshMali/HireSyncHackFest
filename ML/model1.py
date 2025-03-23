@@ -14,6 +14,7 @@ db = firestore.client()
 app = Flask(__name__)
 
 
+
 # Load data from Firebase
 def fetch_data():
     workers_ref = db.collection("Workers").stream()
